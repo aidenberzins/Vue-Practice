@@ -6,13 +6,27 @@ const mainContent = new Vue({
     title2: 'This is the H2 Element',
   }
 })
+
 const secondaryContent = new Vue({
   el: '#app2',
   data: {
     title: 'This is an example of the v-bind directive on an image',
-    img:{
+    img: {
       src: 'http://placekitten.com/800/500',
       alt: 'The alt text is dynamically added through Vue.',
     }
+  }
+})
+
+const thirdSection = new Vue({
+  el: '#app3',
+  data: {
+    title: 'This is an example of the v-on directive. Click to view.',
+  },
+  methods : {
+      sayHello: function( ) {
+        console.log('Click action triggered');
+        this.title = "Click event has been activated";
+       }
   }
 })
