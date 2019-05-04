@@ -1,0 +1,16 @@
+h1{
+ color: darkblue;
+ font-size: 3em;
+}
+h2{
+  color: blue;
+  font-size: 2em;
+}
+h3{
+  color: green;
+  font-size: 1.5em;
+}
+p{
+  font-size: 1.2em;
+  color: gray;
+}
