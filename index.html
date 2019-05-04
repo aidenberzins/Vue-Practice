@@ -6,11 +6,15 @@
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <main id="app">
-          <h1>{{ h1 }}</h1>
-          <section>
-            <h2>{{ h2 }}</h2>
-            <p>{{ p1 }}</p>
+    <main>
+          <section id="app">
+            <h1>{{ title }}</h1>
+            <h2>{{ title2 }}</h2>
+            <p v-text="message">Loading...</p>
+          </section>
+          <section id="app2">
+            <h3>{{ title }}</h3>
+            <img v-bind:src="img.src" :alt="img.alt" >
           </section>
     </main>
   </body>
